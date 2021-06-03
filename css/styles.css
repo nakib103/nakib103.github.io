@@ -1,0 +1,101 @@
+/*************************************************
+ *  Core
+ **************************************************/
+
+html {
+  margin-bottom: 25px;
+}
+
+/* headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+/* Lists */
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+
+/*************************************************
+ *  Nav bar
+ **************************************************/
+
+.navbar {
+  font-weight: bold;
+  background: rgb(255, 255, 255);
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11);
+  z-index: 1;
+}
+
+.navbar-brand img{
+  max-height: 50px;
+}
+
+/*************************************************
+ *  About Section
+ **************************************************/
+
+#about {
+  margin-top: 50px;
+}
+
+#profile {
+  text-align: center;
+  position: relative;
+}
+
+.portrait {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.portrait-title h2{
+  font-weight: bold;
+}
+
+.portrait-title h3{
+  font-size: 1.0em;
+}
+
+ul.network-icon {
+  padding: 0;
+  list-style-type: none;
+}
+
+#description h1{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#description p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.description-edu p{
+  margin: 0;
+}
+
+p.degree {
+  font-weight: bold;
+}
+
+/*************************************************
+ *  Skill Section
+ **************************************************/
+
+#skills{
+   background: rgb(243, 240, 240);
+}
+
+#skills .section-heading{
+  text-align: center;
+}

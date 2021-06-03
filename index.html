@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+    <!-- meta data -->
     <meta name="application-name" content="Personal Portfolio Website">
     <meta name="author" content="Syed Nakib Hossain">
     <meta name="description" content="Personal site of an Software Engineer">
@@ -8,10 +9,16 @@
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <meta name="theme-color" content="#2962ff">
 
+    <!--  -->
     <link rel="icon" href="img/icon.jpg" type="image/jpg">
     <link rel="manifest" href="others/site.webmanifest">
     <link rel="feed" href="others/index.xml" type="application/rss+xml">
     <link rel="apple-touch-icon" href="img/icon-big.jpg">
+
+    <!-- css links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1QGPM6DFJ4"></script>
@@ -27,6 +34,172 @@
 </head>
 
 <body>
-    <p>only Readme.md is showing</p>
+    <!-- <aside>
+        <div class="container">
+
+        </div>
+    </aside> -->
+
+    <!-- nav panel -->
+    <nav class="navbar navbar-expand-lg fixed-topp py-0">
+        <div class="container">
+            <!-- brand -->
+            <a class="navbar-brand" href="#">
+                <img src="img/nav-band.png">
+            </a>
+            <button type="button" class="navbar-toggler"
+                data-toggle="collapse" data-target="#navbar" 
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fas fa-bars"></i></span>
+            </button>
+
+            <!-- leftt aligned links -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#about" data-target="#about">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#skills" data-target="#skills">
+                            <span>Skills</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#experience" data-target="#experience">
+                            <span>Experience</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#problem-solving" data-target="#problem-solving">
+                            <span>Problem Solving</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#open-source" data-target="#open-source">
+                            <span>Open Source</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#achievement" data-target="#achievement">
+                            <span>Achievement</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#cv" data-target="#cv">
+                            <span>CV</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- left aligned links -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-search" href="#">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-dark-toggle">
+                            <i class="fas fa-moon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About section -->
+    <section id="about">
+        <div class="container">
+            <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-telephone person-address">
+                <div class="col-12 col-lg-4" id="profile">
+                    <img class="portrait" src="img/portrait.jpg" itemprop="image" alt="Avatar">
+                    <div class="portrait-title">
+                        <h2 itemprop="name">Syed Nakib Hossain</h2>
+                        <h3 itemprop="jobTitle">Software Engineer</h3>
+                    </div>
+                    <ul class="network-icon" aria-hidden="true">
+                        <li>
+                            <a rel="noopener" href="https://github.com/nakib103" itemprop="sameAs" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a rel="noopener" href="https://gitlab.com/syedhossain103" itemprop="sameAs" target="_blank">
+                                <i class="fab fa-gitlab"></i>
+                            </a>
+                            <a rel="noopener" href="https://stackoverflow.com/users/4835101/syed-nakib-hossain" itemprop="sameAs" target="_blank">
+                                <i class="fab fa-stack-overflow"></i>
+                            </a>
+                            <a rel="noopener" href="https://www.linkedin.com/in/syed-nakib-hossain-353aa9144/" itemprop="sameAs" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a rel="noopener" href="mailto:syedhossain103@gmail.com" itemprop="sameAs" target="_blank">
+                                <i class="fas fa-at"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-8" id="description">
+                    <h1>Biography</h1>
+                    <p>Hello there! I am <code style="color:blue;">Syed Nakib Hossain</code>. You can call me <code style="color:blue;">Nakib</code>.
+                        I am a computer programming enthusiasts. Currently working in the <code style="color: blue;">Software Infrastructure Development 
+                        Engineering department</code> at <code style="color: blue;">Samsung R&D Institute Bangladesh</code>.</p>
+                    
+                    <div class="row">
+                        <div class="col-md-12" id="education">
+                            <h4>Education</h4>
+                            <ul class="ul-edu fa-ul">
+                                <li>
+                                    <i class="fas fa-graduation-cap fa-li"></i>
+                                    <div class="description-edu">
+                                        <p class="degree">Bachelor of Science</p>
+                                        <p class="course">Electrical & Electronic Engineering</p>
+                                        <p class="institute">Bangladesh University of Engineering & Technology</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 section-heading">
+                    <h1>Skills</h1>
+                </div>
+                <div class="col-12 col-md-3"><h3>Programming Languages</h3>
+                    <ul class="fa-ul">
+                        <li><i class="fab fa-cuttlefish fa-li"></i>C/C++</li>
+                        <li><i class="fab fa-python fa-li"></i>Python</li>
+                        <li><i class="fab fa-python fa-li"></i>Go</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3"><h3>Web Development</h3>
+                    <ul class="fa-ul">
+                        <li><i class="fab fa-python fa-li"></i>HTML/CSS</li>
+                        <li><i class="fab fa-python fa-li"></i>javaScript</li>
+                        <li><i class="fab fa-python fa-li"></i>Django</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3"><h3>Machine Learning</h3>
+                    <ul class="fa-ul">
+                        <li><i class="fab fa-python fa-li"></i>Tensorflow</li>
+                        <li><i class="fab fa-python fa-li"></i>Keras</li>
+                        <li><i class="fab fa-python fa-li"></i>Scikit-Learn</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3"><h3>Cloud</h3>
+                    <ul class="fa-ul">
+                        <li><i class="fab fa-python fa-li"></i>AWS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
