@@ -18,6 +18,10 @@ ul, ol, dl {
   margin-bottom: 1rem;
 }
 
+.exp-fill {
+  background-color: rgb(40, 40, 179) !important;
+}
+
 /*************************************************
  *  section
  **************************************************/
@@ -34,6 +38,9 @@ section {
   font-weight: bold;
   background: rgb(255, 255, 255);
   box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   z-index: 1;
 }
 
@@ -101,4 +108,34 @@ p.degree {
 
 #skills .section-heading{
   text-align: center;
+}
+
+/*************************************************
+ *  project section
+ **************************************************/
+
+#projects{
+  background: rgb(243, 240, 240);
+}
+
+#projects .section-heading{
+ text-align: center;
+}
+
+#projects .col-sm-6{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.project-language{
+  padding-top: 10px;
+}
+
+/*************************************************
+ *  achievement section
+ **************************************************/
+
+.achievement-year{
+  padding-right: 20px !important;
+  color: royalblue !important;
 }
