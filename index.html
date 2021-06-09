@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <!-- meta data -->
+    <meta name="application-name" content="Personal Portfolio Website">
+    <meta name="author" content="Syed Nakib Hossain">
+    <meta name="description" content="Personal site of an Software Engineer">
+    <meta name="keywords" content="software, developer, engineer, programming, open source">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta name="theme-color" content="#2962ff">
+
+    <!--  -->
+    <link rel="icon" href="img/icon.jpg" type="image/jpg">
+    <link rel="manifest" href="others/site.webmanifest">
+    <link rel="feed" href="others/index.xml" type="application/rss+xml">
+    <link rel="apple-touch-icon" href="img/icon-big.jpg">
+
+    <!-- css links -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+
+    <!-- js links -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1QGPM6DFJ4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-1QGPM6DFJ4');
+    </script>
+
+    <title>Syed Nakib Hossain</title>
+</head>
+
+<body>
+    <!-- <aside>
+        <div class="container">
+
+        </div>
+    </aside> -->
+
+    <!-- nav panel -->
+    <nav class="navbar navbar-expand-lg fixed-top py-1">
+        <div class="container">
+            <!-- brand -->
+            <a class="navbar-brand" href="#">
+                <img src="img/nav-band.png">
+            </a>
+            <button type="button" class="navbar-toggler"
+                data-toggle="collapse" data-target="#navbar" 
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fas fa-bars"></i></span>
+            </button>
+
+            <!-- leftt aligned links -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#about" data-target="#about">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#skills" data-target="#skills">
+                            <span>Skills</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#experience" data-target="#experience">
+                            <span>Experience</span>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="/#quick-stats" data-target="#quick-stats">
+                            <span>QuickStats</span>
+                        </a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#projects" data-target="#projects">
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#achievements" data-target="#achievements">
+                            <span>Achievements</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="others/SW_CV_SyedNakibHossain.pdf" data-target="#SW_CV_SyedNakibHossain.pdf">
+                            <span>CV</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- left aligned links -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-search" href="#">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-dark-toggle">
+                            <i class="fas fa-moon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About section -->
+    <section id="about">
+        <div class="container">
+            <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-telephone person-address">
+                <!-- profile -->
+                <div class="col-12 col-lg-4" id="profile">
+                    <!-- profile portrait -->
+                    <img class="portrait" src="img/portrait.jpg" itemprop="image" alt="Avatar">
+                    <!-- portrait title -->
+                    <div class="portrait-title">
+                        <h2 itemprop="name">Syed Nakib Hossain</h2>
+                        <h3 itemprop="jobTitle">Software Engineer</h3>
+                    </div>
+                    <!-- networks -->
+                    <ul class="network-icon" aria-hidden="true">
+                        <li>
+                            <a rel="noopener" href="https://github.com/nakib103" itemprop="sameAs" target="_blank">
+                                <i class="fab fa-lg fa-github"></i>
+                            </a>
+                            <a rel="noopener" href="https://gitlab.com/syedhossain103" itemprop="sameAs" target="_blank">
+                                <i class="fab fa-lg fa-gitlab"></i>
+                            </a>
+                            <a rel="noopener" href="https://stackoverflow.com/users/4835101/syed-nakib-hossain" itemprop="sameAs" target="_blank">
+                                <i class="fab fa-lg fa-stack-overflow"></i>
+                            </a>
+                            <a rel="noopener" href="https://www.linkedin.com/in/syed-nakib-hossain-353aa9144/" itemprop="sameAs" target="_blank">
+                                <i class="fab fa-lg fa-linkedin-in"></i>
+                            </a>
+                            <a rel="noopener" href="mailto:syedhossain103@gmail.com" itemprop="sameAs">
+                                <i class="fas fa-lg fa-at"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- biography -->
+                <div class="col-12 col-lg-8" id="description">
+                    <h1>Biography</h1>
+                    <p>Hello, there! This is me - <b>Nakib</b>. I am a passionate coder. I am currently Currently working as a Software 
+                        Infrastructure Developement Engineer at Samsung R&D Institute Bangladesh.        
+                    </p>
+                    
+                    <div class="row">
+                        <div class="col-md-12" id="education">
+                            <h4>Education</h4>
+                            <ul class="ul-edu fa-ul">
+                                <li>
+                                    <i class="fas fa-graduation-cap fa-li"></i>
+                                    <div class="description-edu">
+                                        <p class="degree">Bachelor of Science</p>
+                                        <p class="course">Electrical & Electronic Engineering</p>
+                                        <p class="institute">Bangladesh University of Engineering & Technology</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section -->
+    <section id="skills">
+        <div class="container">
+            <!-- heading -->
+            <div class="row">
+                <div class="col-12 section-heading pb-3">
+                    <h1>Skills</h1>
+                </div>
+            </div>
+            <!-- skill column heading -->
+            <div class="row">
+                    <div class="col"><h4>Programming Languages</h4></div>
+                    <div class="col"><h4>Web Development</h4></div>
+                    <div class="col"><h4>Machine Learning</h4></div>
+                    <div class="col"><h4>Cloud</h4></div>
+                    <div class="col"><h4>DevOps</h4></div>
+                    <div class="col"><h4>Other Tools</h4></div>
+            </div>
+            <!-- skill list -->
+            <div class="row">
+                <div class="col-2">
+                    <ul class="fa-ul">
+                        <li><i class="fab fa-cuttlefish fa-li"></i>C/C++</li>
+                        <li><i class="fab fa-python fa-li"></i>Python</li>
+                        <li><i class="fas fa-code fa-li"></i>Go</li>
+                        <li><i class="fas fa-code fa-li"></i>Bash</li>
+                        <li><i class="fas fa-code fa-li"></i>Batch</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="fa-ul">
+                        <li><i class="fab fa-html5 fa-li"></i>HTML/CSS</li>
+                        <li><i class="fab fa-js-square fa-li"></i>javaScript</li>
+                        <li><i class="fas fa-code fa-li"></i>Django</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="fa-ul">
+                        <li><i class="fas fa-code fa-li"></i>Tensorflow</li>
+                        <li><i class="fas fa-code fa-li"></i>Keras</li>
+                        <li><i class="fas fa-code fa-li"></i>Panda</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="fa-ul">
+                        <li><i class="fab fa-aws fa-li"></i>AWS</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="fa-ul">
+                        <li><i class="fab fa-docker fa-li"></i>Docker</li>
+                        <li><i class="fas fa-code fa-li"></i>kubernetes</li>
+                        <li><i class="fas fa-code fa-li"></i>Quickbuild</li>
+                        <li><i class="fab fa-jenkins fa-li"></i>Jenkins</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="fa-ul">
+                        <li><i class="fas fa-code fa-li"></i>Chef</li>
+                        <li><i class="fas fa-code fa-li"></i>Splunk</li>
+                        <li><i class="fas fa-code fa-li"></i>Nagios</li>
+                        <li><i class="fas fa-code fa-li"></i>ELK</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- experience section -->
+    <section id="experience">
+        <div class="container">
+            <div class="row">
+                <!-- heading -->
+                <div class="col-12 col-lg-4 section-heading">
+                    <h1>Experience</h1>
+                </div>
+                <!-- experiences -->
+                <div class="col-12 col-lg-8">
+                    <!-- SRBD -->
+                    <div class="row experience">
+                        <div class="col-auto text-center flex-column d-none d-sm-flex">
+                            <div class="row h-50">
+                                <div class="col ">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
+                            <div class="m-2">
+                                <span class="badge badge-pill border">&nbsp;</span>
+                            </div>
+                            <div class="row h-50">
+                                <div class="col border-right">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
+                        </div>
+
+                        <div class="col py-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="float-right text-muted exp-meta">
+                                        <div class="text-right">April 18, 2018 – Ongoing</div>
+                                        <div class="text-right">Dhaka, Bangladesh</div>
+                                    </div>
+                                    <h4 class="card-title exp-title text-muted my-1">Software Engineer</h4>
+                                    <h4 class="card-title exp-company my-0">Samsung R&D Institute Bangladesh</h4>
+                                    <div class="card-text">Software Infrastructure Development Engineering</div>
+                                    <div class="card-text my-1">
+                                        <ul>
+                                            <li>AWS DevOps</li>
+                                            <li>CI/CD Infrastrucuture Development</li>
+                                            <li>Developer Tools</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- project section -->
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <!-- heading -->
+                <div class="col section-heading pb-3">
+                    <h1>Projects</h1>
+                </div>
+            </div>
+            <!-- projects -->
+            <div class="row" data-masonry='{"percentPosition": true }'>
+                <!-- cursorControl -->
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body float-right">
+                            <div class=project-tags>
+                                <small class="text-primary">#image-processing #control #open-sourced</small>
+                            </div>
+
+                            <a href="https://github.com/nakib103/cursorControl" target="_blank">
+                                <h4 class="card-title my-1">cursorControl</h4>
+                            </a>
+
+                            <div class="card-text">
+                                <small class="blockquote-footer">The goal of cursorControl is to enable a disabled person to use 
+                                the technology the same way a non-disabled person would do.</small>
+                            </div>
+                            <div class="card-text lead">Currently it can control mouse cursor from head movement. The design
+                                is made modular to support different input source and controller. 
+                            </div>
+
+                            <div class="project-language">
+                                <i class="fas fa-circle fa-xs" style="color: cyan;"></i>
+                                <small class="px-1">C++</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- retinopathy -->
+                <div class="col-sm-6">
+                    <div class="card">    
+                        <div class="card-body float-right">
+                            <div class=project-tags>
+                                <small class="text-primary">#image-processing</small>
+                            </div>
+
+                            <a href="https://github.com/nakib103/Hypertensive-Retinopathy-Detection" target="_blank">
+                                <h4 class="card-title my-1">AVR Calculation</h4>
+                            </a>
+                            
+                            <div class="card-text lead">Arteriolar-to-Venular diameter Ratio (AVR) is a parameter used 
+                                to distinguish different stages Hypertensive Retinopathy patients. In this project we
+                                wrote a program to automatically determine AVR ratio from retina (fundus) image.
+                            </div>
+
+                            <div class="project-language">
+                                <i class="fas fa-circle fa-xs" style="color: magenta;"></i>
+                                <small class="px-1">Python</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- IRC -->
+                <div class="col-sm-6">
+                    <div class="card">    
+                        <div class="card-body float-right">
+                            <div class=project-tags>
+                                <small class="text-primary">#robotics</small>
+                            </div>
+
+                            <h4 class="card-title my-1">Multi-tasking Robot</h4>
+                            
+                            <div class="card-text">
+                                <small class="blockquote-footer">at International Robotics Challenge Bangladesh Round 
+                                    2015-16</small>
+                            </div>
+                            <div class="card-text lead">We made an auto-bot that follows a grid from start to finish
+                                overcoming obstacles (<em>climbing hills, filling holes</em>). There was also an remote controlled
+                                manual-bot that supported auto-bot to complete the task. 
+                            </div>
+
+                            <div class="project-language">
+                                <i class="fas fa-circle fa-xs" style="color: cyan;"></i>
+                                <small class="px-1">C</small>
+                                <i class="fas fa-circle fa-xs" style="color: violet;"></i>
+                                <small class="px-1">Arduino</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Imagine Cup -->
+                <div class="col-sm-6">
+                <div class="card">    
+                    <div class="card-body float-right">
+                        <div class=project-tags>
+                            <small class="text-primary">#image-processing #machine-learning</small>
+                        </div>
+
+                        <a href="https://imaginecup.microsoft.com/en-us/Team/93859bbc-6135-4234-975a-dde2b36dadb3" target="_blank">
+                            <h4 class="card-title my-1">fasTnosis</h4>
+                        </a>
+
+                        <div class="card-text">
+                            <small class="blockquote-footer">at Microsoft Imagine Cup 2017</small>
+                        </div>
+                        <div class="card-text lead">An automatic diagnosis app for detection of tuberculosis, plasmodium, 
+                            and intestinal parasites in blood, smear, and stool sample respectively using deep learning (ResNet) model. 
+                        </div>
+
+                        <div class="project-language">
+                            <i class="fas fa-circle fa-xs" style="color: violet;"></i>
+                            <small class="px-1">Python</small>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- achievement section -->
+    <section id="achievement">
+        <div class="container">
+            <div class="row">
+                <!-- heading -->
+                <div class="col-12 col-lg-4 section-heading">
+                    <h1>Achievements</h1>
+                </div>
+                <!-- achievement timeline -->
+                <div class="col-12 col-lg-8">
+                    <div class="row achievement">
+                        <div class="col-auto text-center flex-column d-none d-sm-flex">
+                            <div class="m-2">
+                                <span class="badge badge-pill border exp-fill">&nbsp;</span>
+                            </div>
+                            <div class="row h-50">
+                                <div class="col border-right">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
+                        </div>
+
+                        <div class="col py-2">
+                            <div class="d-flex">
+                                <div class="achievement-year">2019</div>
+                                <div>
+                                    <strong>Icon of The Month</strong>, 
+                                    <em>Samsung R&D Institute Bangladesh</em>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row achievement">
+                        <div class="col-auto text-center flex-column d-none d-sm-flex">
+                            <div class="m-2">
+                                <span class="badge badge-pill border">&nbsp;</span>
+                            </div>
+                            <div class="row h-50">
+                                <div class="col border-right">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
+                        </div>
+
+                        <div class="col py-2">
+                            <div class="d-flex">
+                                <div class="achievement-year">2017</div>
+                                <div>
+                                    <strong>World Finalist</strong>, 
+                                    <em>Microsoft Imagine Cup</em>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row achievement">
+                        <div class="col-auto text-center flex-column d-none d-sm-flex">
+                            <div class="m-2">
+                                <span class="badge badge-pill border exp-fill">&nbsp;</span>
+                            </div>
+                            <div class="row h-50">
+                                <div class="col border-right">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
+                        </div>
+
+                        <div class="col py-2">
+                            <div class="d-flex ">
+                                <div class="achievement-year">2016</div>
+                                <div>
+                                    <strong>3rd place</strong>, 
+                                    <em>International Robotics Challenge Bangladesh Round</em>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row achievement">
+                        <div class="col-auto text-center flex-column d-none d-sm-flex">
+                            <div class="m-2">
+                                <span class="badge badge-pill border">&nbsp;</span>
+                            </div>
+                            <div class="row h-50">
+                                <div class="col border-right">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
+                        </div>
+
+                        <div class="col py-2">
+                            <div class="d-flex ">
+                                <div class="achievement-year">2014</div>
+                                <div>
+                                    <strong>45th place</strong>, 
+                                    <em>ICPC Bangladesh regional Preliminiary</em>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row achievement">
+                        <div class="col-auto text-center flex-column d-none d-sm-flex">
+                            <div class="m-2">
+                                <span class="badge badge-pill border exp-fill">&nbsp;</span>
+                            </div>
+                            <div class="row h-50">
+                                <div class="col border-right">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
+                        </div>
+
+                        <div class="col py-2">
+                            <div class="d-flex ">
+                                <div class="achievement-year">2011</div>
+                                <div>
+                                    <strong>9th place</strong>, 
+                                    <em>Bangladesh Olympiad on Informatics</em>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row achievement">
+                        <div class="col-auto text-center flex-column d-none d-sm-flex">
+                            <div class="m-2">
+                                <span class="badge badge-pill border">&nbsp;</span>
+                            </div>
+                            <div class="row h-50">
+                                <div class="col border-right">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
+                        </div>
+
+                        <div class="col py-2">
+                            <div class="d-flex ">
+                                <div class="achievement-year">2011</div>
+                                <div>
+                                    <strong>1st Runner Up</strong>, 
+                                    <em>Bangladesh Divisional Mathmatical Olympiad </em>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row achievement">
+                        <div class="col-auto text-center flex-column d-none d-sm-flex">
+                            <div class="m-2">
+                                <span class="badge badge-pill border exp-fill">&nbsp;</span>
+                            </div>
+                            <div class="row h-50">
+                                <div class="col border-right">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
+                        </div>
+
+                        <div class="col py-2">
+                            <div class="d-flex ">
+                                <div class="achievement-year">2008</div>
+                                <div>
+                                    <strong>2nd Runner Up</strong>, 
+                                    <em>Bangladesh Divisional Mathmatical Olympiad </em>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="site-footer">
+            <p class="powered-by text-center">
+                Syed Nakib Hoosain © 2021 | Powered by
+                <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+                <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        
+                <span class="float-right" aria-hidden="true">
+                    <a href="#" id="back_to_top">
+                    <span class="button_icon">
+                        <i class="fas fa-chevron-up fa-2x"></i>
+                    </span>
+                    </a>
+                </span>
+            </p>
+        </footer>
+      </div>
+</body>
+</html>
